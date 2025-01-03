@@ -4,8 +4,9 @@ import Header from '@/app/components/header';
 import { products } from '@/app/data/products';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
+import { Suspense } from 'react';
 
-export default function Details() {
+export function Details() {
     const searchParams = useSearchParams();
     const id = Number.parseInt(searchParams.get('id') || '');
 
@@ -26,3 +27,11 @@ export default function Details() {
         </>
     );
 };
+
+export default function DetailsWrapper() {
+    return (
+        <Suspense>
+            <Details/>
+        </Suspense>
+    );
+}
