@@ -28,7 +28,7 @@ export default function RootLayout({
         <link href='./output.css' rel='stylesheet'/>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
