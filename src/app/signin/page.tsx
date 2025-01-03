@@ -6,6 +6,7 @@ export default function SignInPage() {
         <>
             <Header/>
             <main className="flex items-center justify-center h-full p-10">
+            <h1>Вхід</h1>
             <div className="flex flex-col items-center">
                 <input type="email" className="w-52 h-10 border-2 border-sky-300 rounded-lg mb-4 pl-2" placeholder="Введіть е-пошту"/>
                 <input type="password" className="w-52 h-10 border-2 border-sky-300 rounded-lg mb-4 pl-2" placeholder="Введіть Пароль"/>
